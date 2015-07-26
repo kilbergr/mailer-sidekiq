@@ -1,0 +1,12 @@
+ <html>
+   <head>
+     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+   </head>
+   <body>
+     <h3>A reminder from <%= @user.first_name @user.last_name %> (<%= @email %>)</h3>
+     <p>
+       <%= @message %>
+     </p>
+     <%= link_to 'list', user_group_list_url(@user.group) %>
+   </body>
+ </html>

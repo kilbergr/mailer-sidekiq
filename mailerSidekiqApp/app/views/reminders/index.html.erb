@@ -1,0 +1,12 @@
+<h3>Send a reminder to a friend</h3>
+<%= form_tag reminders_send_path do %>
+<%= label_tag :user, "Your Username" %>
+<%= text_field_tag :user%>
+<%= label_tag :email, "Your Email" %>
+<%= text_field_tag :email%>
+<%= label_tag :message, "Add Message" %>
+<%= text_field_tag :message%>
+<%= label_tag :friend, "Add Recipient" %>
+<%= text_field_tag :friend%>
+<%= submit_tag "Send Reminder" %>
+<% end %>
