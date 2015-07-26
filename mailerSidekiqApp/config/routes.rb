@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   
   root 'reminders#index'
-  post 'reminders/send', to: 'reminders#send'
+  post 'reminders/contact', to: 'reminders#contact'
 
   #           root GET  /                         reminders#index
-#   reminders_send POST /reminders/send(.:format) reminders#send
+#   reminders_contact POST /reminders/contact(.:format) reminders#contact
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -3,7 +3,7 @@ class PostmanWorker
 
   def perform(content, count)
     content = JSON.load(content)
-    ReminderMailer.send_email(content['user'], content['email'], content['message'], content['friend']).deliver
+    ReminderMailer.contact_email(content['user'], content['email'], content['message'], content['friend']).deliver
   end
 
    sidekiq_retries_exhausted do |msg|
